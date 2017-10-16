@@ -1,7 +1,213 @@
-/* ======= header ======= */
-
-.logo img{
-	width: 50px;
-	height: 50px;
+* {
+    font-family: Helvetica, Arial;
+    box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    font-family: Helvetica, Arial, Microsoft JhengHei;
+    text-align: center;
+}
+
+hr {
+    width: 50px;
+    border: 0;
+    height: 4px;
+    margin: 30px auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* ======= header ======= */
+
+
+/*== nav ==*/
+
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.logo {
+    margin-left: 50px;
+    float: left;
+}
+
+.logo img {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.logo h2 {
+    width: 300px;
+    margin-left: 65px;
+    line-height: 50px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    color: #E0E0E0;
+}
+
+.menu {
+    float: right;
+    margin-right: 50px;
+}
+
+.menu li {
+    float: left;
+    margin: 15px;
+}
+
+.menu a {
+    color: #7B7B7B;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    transition: .5s all ease-out;
+}
+
+.menu a:hover {
+    color: #F0F0F0;
+}
+
+
+/*== end nav ==*/
+
+
+/*== maintitle ==*/
+
+.header-img {
+    background-image: url(../img/header.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.maintitle {
+    position: relative;
+}
+
+.maintitlecontent {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.maintitlecontent h1 {
+    padding: 8px 0;
+    color: #FCFCFC;
+    font-size: 4em;
+    font-weight: 900;
+    text-shadow: 2px 2px #8E8E8E;
+}
+
+.maintitlecontent hr {
+    background-color: #F05F40;
+}
+
+.maintitlecontent p {
+    padding: 3px 0;
+    letter-spacing: 1px;
+    color: #F0F0F0;
+    text-shadow: 1px 1px #8E8E8E;
+}
+
+
+/*== end maintitle ==*/
+
+
+/*== about ==*/
+
+.about {
+    min-height: 400px;
+    background-color: #F05F40;
+}
+
+.aboutcontent {
+    padding: 100px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.aboutcontent h3 {
+    font-size: 40px;
+    color: #FCFCFC;
+}
+
+.aboutcontent hr {
+    background-color: #FCFCFC;
+}
+
+.aboutcontent p {
+    letter-spacing: 1px;
+    padding: 1px 0;
+    color: #E0E0E0;
+}
+
+
+/*== end about ==*/
+
+
+/*== skill ==*/
+
+.skill {
+    min-height: 600px;
+}
+
+.skillcontent{
+	padding: 100px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.skillcontent h3{
+	font-size: 40px;
+	color: #272727;
+}
+
+.skillcontent hr{
+	background-color: #272727;
+}
+
+.skillcontent li{
+	float: left;
+	width: 33.3333%;
+	margin: 0 auto;
+}
+
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.st-feature{
+	background-color: #F05F40;
+	border-radius: 50%;
+	position: relative;
+	transform: rotate(0) scale(1);
+}
+
+/*== end skill ==*/
