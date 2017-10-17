@@ -15,11 +15,18 @@ span {
     text-align: center;
 }
 
+h3{
+	font-size: 40px;
+	color: #272727;
+}
+
 hr {
+    margin: 30px auto;
     width: 50px;
     border: 0;
     height: 4px;
-    margin: 30px auto;
+    background-color: #F05F40;
+
 }
 
 .clearfix {
@@ -148,7 +155,6 @@ nav {
 }
 
 .aboutcontent h3 {
-    font-size: 40px;
     color: #FCFCFC;
 }
 
@@ -179,11 +185,6 @@ nav {
 
 }
 
-.skillcontent h3{
-	font-size: 40px;
-	color: #272727;
-}
-
 .skillcontent hr{
 	background-color: #272727;
 }
@@ -195,12 +196,32 @@ nav {
 }
 
 .fa-stack {
-    position: relative;
+	margin-left: 30%;
+    margin-bottom: 25px;
+    /*position: relative;*/
     display: inline-block;
     width: 2em;
     height: 2em;
     line-height: 2em;
     vertical-align: middle;
+	transition: 0.5s;
+}
+
+.fa-inverse{
+	transition: 0.5s;
+}
+
+
+.fa-stack:hover{
+	background-color: #fff;
+	transition: 0.5s;
+}
+
+.fa-inverse:hover{
+	color: #F05F40;
+	font-size: 1.4em;
+	transition: 0.5s;
+
 }
 
 .st-feature{
@@ -210,4 +231,58 @@ nav {
 	transform: rotate(0) scale(1);
 }
 
+.skillcontent h4{
+	font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.skillcontent p{
+	line-height: 1.4;
+	color:#777;
+}
+
+.skillcontent p:first-child{
+	padding-top: 20px;
+}
+
 /*== end skill ==*/
+
+/*== works ==*/
+
+.works{
+	position: relative;
+}
+
+.works-img{
+	background-image: url(../img/taylo.jpg);
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+    background-position: center center;
+	background-attachment: fixed;
+}
+
+.workscontent{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 100px 0;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform:translateX(-50%);	
+}
+
+.workscontent li{
+	float: left;
+	margin: 5px 12px;
+	width: 30.33333%;
+}
+
+.workscontent img{
+	width: 300px;
+	height: 200px;
+}
+
+
+/*== end works ==*/
