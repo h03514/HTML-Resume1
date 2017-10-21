@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
 <body>
@@ -23,10 +24,10 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SKILL</a></li>
-                        <li><a href="#">WORKS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li class="page1"><a href="#page1">ABOUT</a></li>
+                        <li class="page2"><a href="#page2">SKILL</a></li>
+                        <li class="page3"><a href="#page3">WORKS</a></li>
+                        <li class="page4"><a href="#page4">CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
@@ -43,8 +44,8 @@
             </div>
         </header>
         <content>
-            <div class="about">
-                <div class="aboutcontent">
+            <div id="page1" class="about">
+                <div class="aboutcontent" >
                     <h3>ABOUT</h3>
                     <hr>
                     <p>Hi, I am Mark.</p>
@@ -53,7 +54,7 @@
                     <p>an in-depth understanding of emerging technologies.</p>
                 </div>
             </div>
-            <div class="skill">
+            <div id="page2" class="skill">
                 <div class="skillcontent">
                     <h3>SKILL</h3>
                     <hr>
@@ -92,7 +93,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="works">
+            <div id="page3" class="works">
                 <div class="works-img"></div>
                 <div class="workscontent">
                     <h3>WORKS</h3>
@@ -219,7 +220,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="contact">
+            <div id="page4" class="contact">
                 <div class="contactcontent">
                     <h3>CONTACT</h3>
                     <hr>
@@ -257,6 +258,9 @@
         	</div>
             <p>Copyright © Mark All rights reserved.</p>
         </footer>
+
+		<script src="js/jquery-3.2.1.js"></script>
+        <script src="js/main.js"></script>
     </div>
 </body>
 

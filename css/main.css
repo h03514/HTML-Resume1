@@ -34,6 +34,7 @@ hr {
 
 
 
+
 /* ======= header ======= */
 
 
@@ -91,6 +92,7 @@ nav {
 
 
 
+
 /*== end nav ==*/
 
 
@@ -139,6 +141,7 @@ nav {
 
 
 
+
 /*== end maintitle ==*/
 
 
@@ -171,6 +174,7 @@ nav {
 
 
 
+
 /*== end about ==*/
 
 
@@ -184,6 +188,8 @@ nav {
     padding: 100px 0;
     max-width: 1000px;
     margin: 0 auto;
+    display: none;
+
 }
 
 .skillcontent hr {
@@ -247,6 +253,7 @@ nav {
 }
 
 
+
 /*== end skill ==*/
 
 
@@ -256,13 +263,13 @@ nav {
     position: relative;
 }
 
-.works h3{
-	color:#FCFCFC;
-	text-shadow: 1px 1px 1px #222;
+.works h3 {
+    color: #FCFCFC;
+    text-shadow: 1px 1px 1px #222;
 }
 
-.workscontent hr{
-	background-color: #FCFCFC;
+.workscontent hr {
+    background-color: #FCFCFC;
 }
 
 .works-img {
@@ -294,6 +301,7 @@ nav {
     width: 300px;
     height: 200px;
 }
+
 
 
 
@@ -332,6 +340,7 @@ nav {
 }
 
 
+
 /*end titletext*/
 
 
@@ -340,10 +349,15 @@ nav {
 
 /*== contact ==*/
 
+.contact{
+	min-height: 700px;
+}
+
 .contactcontent {
     padding: 100px 0;
     max-width: 1000px;
     margin: 0 auto;
+    display: none;
 }
 
 .box3 {
@@ -389,9 +403,9 @@ nav {
     border-radius: 50%;
 }
 
-.contactcontent a:hover{
-	background-color: #F05F40;
-	transition:0.3s;
+.contactcontent a:hover {
+    background-color: #F05F40;
+    transition: 0.3s;
 }
 
 .contactcontent li {
@@ -409,30 +423,32 @@ nav {
     margin-left: 0;
 }
 
+
 /*== end contact ==*/
+
 
 /*== footer ==*/
 
-footer{
-	position: relative;
+footer {
+    position: relative;
 }
 
-.footer-img{
-	background-image: url(../img/footer.jpg);
-	width: 100%;
-	height: 200px;
-	background-size: cover;
+.footer-img {
+    background-image: url(../img/footer.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
 }
 
-footer p{
-	position: absolute;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	top: 0;
-	line-height: 200px;
-	font-size: 15px;
-	letter-spacing: 2px;
-	color: #fcfcfc;
+footer p {
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    line-height: 200px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fcfcfc;
 }
