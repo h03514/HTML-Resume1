@@ -25,11 +25,30 @@ $(document).ready(function() {
         };
     });
     
+    // 點小圖讓大圖載入
+    $('.box a').click(function(e) {
+    	/* Act on the event */
+    	e.preventDefault();
+
+    	var url = $(this).prop('href');
+    	var img = $('<img>');
+    	img.prop('src',url);
+
+    	$('.modal').html(img);
+    	$('.box-modal').fadeIn();
+    });
+
+    	$('.box-modal').click(function(e){
+    		$(this).fadeOut();
+    	});
+
     // slidedown contactcontent
     $(document).scroll(function(e) {
         if ($(this).scrollTop() > 1940) {
             $('.contactcontent').slideDown(1500);
         };
     });
+
+
 
 });

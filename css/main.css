@@ -302,7 +302,30 @@ nav {
     height: 200px;
 }
 
+.box-modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+}
 
+.modal{
+	margin: 10% auto ;
+	min-width: 500px;
+	max-width: 60%;
+	height: auto;
+}
+
+.modal img{
+	display: inline-block;
+	width: 100%;
+	height: 0 auto;
+	z-index: 999;
+	
+}
 
 
 /*titletext*/
