@@ -32,6 +32,28 @@ hr {
     clear: both;
 }
 
+@media screen and (max-width: 960px) {
+
+    p {
+        font-size: 13px;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        padding: 5px 0;
+        background-color: rgba(0, 0, 0, .7);
+    }
+}
+
+.wrap {
+    width: 100%;
+}
+
+
+
 
 
 
@@ -41,7 +63,8 @@ hr {
 /*== nav ==*/
 
 nav {
-    position: fixed;
+    position: absolute;
+    top: 0;
     z-index: 100;
     width: 100%;
     padding: 10px 0;
@@ -89,6 +112,93 @@ nav {
 .menu a:hover {
     color: #F0F0F0;
 }
+
+.hambugermenu {
+    display: none; 
+    position: absolute;
+    right: 30px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.hambuber a {
+    color: #f5f5f5;
+}
+
+@media screen and (max-width: 1280px) {
+    .wrap {
+        max-width: 100%;
+    }
+
+    .menu {
+        float: right;
+        margin-right: 0px;
+    }
+
+    .menu li {
+        float: left;
+        margin: 15px;
+    }
+
+    .menu a {
+        color: #7B7B7B;
+        font-size: 14.5px;
+        letter-spacing: 0px;
+        transition: .5s all ease-out;
+    }
+
+    .menu a:hover {
+        color: #F0F0F0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hambugermenu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    h1 {
+        font-size: 3.5em !important;
+    }
+
+    .logo {
+        margin-left: 10px;
+        float: left;
+    }
+
+    .logo img {
+        float: left;
+        width: 35px;
+        height: 50px;
+    }
+
+    .logo h2 {
+        width: 300px;
+        margin-left: 45px;
+        line-height: 50px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 700;
+        color: #E0E0E0;
+    }
+
+
+    .menu {
+        display: none;
+    }
+}
+
+
+
+
+
 
 
 
@@ -173,6 +283,26 @@ nav {
 }
 
 
+@media screen and (max-width: 420px) {
+    .aboutcontent {
+        margin: 0 30px;
+    }
+
+    .aboutcontent p {
+        letter-spacing: 2px;
+        padding: 2px 0;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        text-justify: inter-ideograph;
+        ;
+    }
+}
+
+
+
+
+
 
 
 /*== end about ==*/
@@ -189,7 +319,6 @@ nav {
     max-width: 1000px;
     margin: 0 auto;
     display: none;
-
 }
 
 .skillcontent hr {
@@ -253,6 +382,25 @@ nav {
 }
 
 
+@media screen and (max-width: 475px) {
+    .skill {
+        min-height: auto;
+    }
+
+    .skill-width {
+        margin-left: 13%;
+        font-size: 3em;
+    }
+
+    .skill-p {
+        display: none;
+    }
+}
+
+
+
+
+
 
 /*== end skill ==*/
 
@@ -275,14 +423,14 @@ nav {
 .works-img {
     background-image: url(../img/content.jpg);
     width: 100%;
-    min-height: 100vh;
+    height: 60em;
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
 }
 
 .workscontent {
-    max-width: 1000px;
+    width: 1000px;
     margin: 0 auto;
     padding: 100px 0;
     position: absolute;
@@ -291,16 +439,77 @@ nav {
     transform: translateX(-50%);
 }
 
+.padview,
+.buttonclick {
+    display: none;
+}
+
 .workscontent li {
     float: left;
-    margin: 5px 12px;
-    width: 30.33333%;
+    margin: 5px 12px 5px 1.9%;
 }
 
 .workscontent img {
     width: 300px;
     height: 200px;
 }
+
+
+@media screen and (max-width: 1280px) {
+    .deskview {
+        display: none;
+    }
+    .padview,
+    .buttonclick {
+        display: block;
+    }
+    .workscontent ul {
+        margin-left: 12%;
+    }
+    .workscontent li {
+        float: left;
+        margin: 0 5px;
+        margin-bottom: 2%;
+        width: 45%;
+    }
+
+    .works-img {
+        height: 55em;
+    }
+    .workscontent img {
+        width: 350px;
+        height: 233px;
+    }
+
+    .buttonclick {
+        margin-left: 45% !important;
+    }
+    .buttonclick li {
+        font-size: 1.4em;
+        margin: 30px 15px;
+        width: 0;
+    }
+
+    .buttonclick a {
+        color: #333;
+    }
+
+    .buttonclick a:hover {
+        color: white;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .padview,.buttonclick{
+        display: none;
+    }
+}
+
+
+
+
+
 
 
 
@@ -321,11 +530,21 @@ nav {
 }
 
 .titletext {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 233px;
     position: absolute;
     background-color: rgba(255, 255, 255, .7);
     transition: all ease .5s;
+}
+
+@media screen and (max-width: 1280px) {
+    .titletext {
+        width: 350px;
+        height: 233px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, .7);
+        transition: all ease .5s;
+    }
 }
 
 .titletext h4 {
@@ -341,6 +560,11 @@ nav {
 
 
 
+
+
+
+
+
 /*end titletext*/
 
 
@@ -349,8 +573,8 @@ nav {
 
 /*== contact ==*/
 
-.contact{
-	min-height: 700px;
+.contact {
+    min-height: 700px;
 }
 
 .contactcontent {
@@ -424,6 +648,11 @@ nav {
 }
 
 
+
+
+
+
+
 /*== end contact ==*/
 
 
@@ -452,4 +681,3 @@ footer p {
     letter-spacing: 2px;
     color: #fcfcfc;
 }
-
