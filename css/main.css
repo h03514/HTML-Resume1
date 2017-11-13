@@ -32,7 +32,7 @@ hr {
     clear: both;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1280px) {
 
     p {
         font-size: 13px;
@@ -57,13 +57,15 @@ hr {
 
 
 
+
+
 /* ======= header ======= */
 
 
 /*== nav ==*/
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
@@ -114,7 +116,7 @@ nav {
 }
 
 .hambugermenu {
-    display: none; 
+    display: none;
     position: absolute;
     right: 30px;
     line-height: 50px;
@@ -203,6 +205,8 @@ nav {
 
 
 
+
+
 /*== end nav ==*/
 
 
@@ -249,6 +253,12 @@ nav {
     text-shadow: 1px 1px #8E8E8E;
 }
 
+@media screen and (max-width: 768px) {
+    .maintitlecontent p{
+        font-size: 18px;
+    }
+}
+
 
 
 
@@ -290,14 +300,16 @@ nav {
 
     .aboutcontent p {
         letter-spacing: 2px;
-        padding: 2px 0;
+        padding: 10px 0;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 18px;
         text-align: center;
         text-justify: inter-ideograph;
         ;
     }
 }
+
+
 
 
 
@@ -382,7 +394,7 @@ nav {
 }
 
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 420px) {
     .skill {
         min-height: auto;
     }
@@ -396,6 +408,7 @@ nav {
         display: none;
     }
 }
+
 
 
 
@@ -430,7 +443,7 @@ nav {
 }
 
 .workscontent {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 100px 0;
     position: absolute;
@@ -440,13 +453,14 @@ nav {
 }
 
 .padview,
-.buttonclick {
+.buttonclick,
+.phoneview {
     display: none;
 }
 
 .workscontent li {
     float: left;
-    margin: 5px 12px 5px 1.9%;
+    margin: 5px 12px 5px 0;
 }
 
 .workscontent img {
@@ -456,15 +470,22 @@ nav {
 
 
 @media screen and (max-width: 1280px) {
-    .deskview {
+    .deskview,
+    .phoneview {
         display: none;
     }
     .padview,
     .buttonclick {
         display: block;
     }
-    .workscontent ul {
-        margin-left: 12%;
+
+    .padview {
+        width: 800px;
+        margin-top: 80px;
+    }
+
+    .padview ul {
+        margin-left: 9%;
     }
     .workscontent li {
         float: left;
@@ -477,12 +498,12 @@ nav {
         height: 55em;
     }
     .workscontent img {
-        width: 350px;
-        height: 233px;
+        width: 300px;
+        height: 200px;
     }
 
     .buttonclick {
-        margin-left: 45% !important;
+        margin-left: 43% !important;
     }
     .buttonclick li {
         font-size: 1.4em;
@@ -500,11 +521,26 @@ nav {
     }
 }
 
-@media screen and (max-width: 420px){
-    .padview,.buttonclick{
+@media screen and (max-width: 420px) {
+    .works-img {
+        max-height: 85vh;
+        width: 100%;
+    }
+    .deskview,
+    .padview {
         display: none;
     }
+
+    .phoneview {
+        display: block;
+        margin-top: 50px;
+    }
+    .buttonclick {
+        margin-left: 38% !important;
+    }
 }
+
+
 
 
 
@@ -530,8 +566,8 @@ nav {
 }
 
 .titletext {
-    width: 350px;
-    height: 233px;
+    width: 300px;
+    height: 200px;
     position: absolute;
     background-color: rgba(255, 255, 255, .7);
     transition: all ease .5s;
@@ -539,11 +575,7 @@ nav {
 
 @media screen and (max-width: 1280px) {
     .titletext {
-        width: 350px;
-        height: 233px;
-        position: absolute;
-        background-color: rgba(255, 255, 255, .7);
-        transition: all ease .5s;
+        display: none;
     }
 }
 
@@ -556,6 +588,13 @@ nav {
 .titletext p {
     font-size: 22px;
     font-weight: 700;
+}
+
+
+@media screen and (max-width: 420px) {
+    .titletext {
+        display: none;
+    }
 }
 
 
@@ -585,9 +624,15 @@ nav {
 }
 
 .box3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(../img/me.jpg);
+    background-repeat: no-repeat;
+    background-position: 58% 35%;
     display: inline-block;
-    margin: 5px 0 25px 50%;
-    transform: translateX(-50%)
+    margin: 5px 0 25px 51%;
+    transform: translateX(-50%);
 }
 
 .contactcontent img {
@@ -647,10 +692,19 @@ nav {
     margin-left: 0;
 }
 
+@media screen and (max-width: 1280px) {
+    .contactcontent p{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+}
 
-
-
-
+@media screen and (max-width: 420px) {
+    .contactcontent p{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+}
 
 
 /*== end contact ==*/
@@ -664,7 +718,7 @@ footer {
 
 .footer-img {
     background-image: url(../img/footer.jpg);
-    width: 100%;
+    max-width: 100%;
     height: 200px;
     background-size: cover;
     background-position: center bottom;
