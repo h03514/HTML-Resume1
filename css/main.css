@@ -49,7 +49,7 @@ hr {
 }
 
 .wrap {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -65,7 +65,7 @@ hr {
 /*== nav ==*/
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 100;
     width: 100%;
